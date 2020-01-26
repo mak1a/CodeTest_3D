@@ -1,0 +1,44 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "vector": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "future": "cpp",
+        "string": "cpp",
+        "system_error": "cpp",
+        "thread": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp",
+        "*.ipp": "cpp",
+        
+    },
+
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && runFiles=`ls *.cpp` && g++ -std=c++14 `echo ${runFiles}` -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "clang.cxxflags": [
+        "-std=c++14"
+    ],
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"C_Cpp.updateChannel": "Insiders",
+	
+    // single: Comments are single-line comments that start with three slashes (///) (Default)
+	// delimited: Delimited comments that start with a slash and two stars (/**)
+	"docomment.syntax": "single",
+	// Press the Enter key to activate a command (Default: false)
+	"docomment.activateOnEnter": false,
+	
+	// Insert spaces when pressing Tab.
+	"editor.insertSpaces": true,
+	// The number of spaces a tab is equal to.
+	"editor.tabSize": 4,
+	"terminal.integrated.rendererType": "dom"
+}
