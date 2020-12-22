@@ -23,6 +23,8 @@ cassert
 /Users/yamaguchishunya/Game3DProject/src/include/Vector3.hpp
 cmath
 -
+istream
+-
 
 /Users/yamaguchishunya/Game3DProject/src/main.cpp
 iostream
@@ -42,6 +44,8 @@ cmath
 cstdlib
 -
 string
+-
+iomanip
 -
 include/Transformer.hpp
 /Users/yamaguchishunya/Game3DProject/src/include/Transformer.hpp

@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <cmath>
+#include <istream>
 
 namespace mathUtl {
     class Vec3 {
@@ -354,5 +355,12 @@ namespace mathUtl {
 
     inline constexpr Vec3 operator*(const double s_, const Vec3& v_) {
         return v_ * s_;
+    }
+
+    inline std::istream& operator>>(std::istream& input_, Vec3& v_) {
+        double x{}, y{}, z{};
+        input_ >> x >> y >> z;
+        v_.Set(x, y, z);
+        return input_;
     }
 }  // namespace mathUtl
