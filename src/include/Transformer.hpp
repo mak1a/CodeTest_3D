@@ -862,6 +862,10 @@ namespace mathUtl {
         y = -ch * sp * sb + sh * cp * cb;
         z = -sh * sp * cb + ch * cp * sb;
     }
+
+    /// <summary>
+    /// 慣性空間→オブジェクト空間への回転を実行する四元数をセットアップ
+    /// </summary>
     void Quaternion::SetToRotateInertialToObject(const EulerAngles& orientation_) {
         double sp{}, sb{}, sh{};
         double cp{}, cb{}, ch{};
@@ -959,6 +963,9 @@ namespace mathUtl {
         tz = -(pos_.x * m13 + pos_.y * m23 + pos_.z * m33);
     }
 
+    /// <summary>
+    /// 角変異を四元数形式で与え、回転を実行する行列を生成
+    /// </summary>
     void Mat4x3::FromQuaternion(const Quaternion& q_) {
         const double ww{2.0 * q_.w};
         const double xx{2.0 * q_.x};
